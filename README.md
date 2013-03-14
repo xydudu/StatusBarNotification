@@ -1,3 +1,7 @@
+# Phonegap StatusBarNotification plugin for Android (plugman compatible) #
+
+plugman --platform android --project <directory> --plugin git://github.com/rstets/StatusBarNotification.git
+
 # StatusBarNotification plugin for Cordova #
 
 This plugin allows you to display notifications in the status bar from your Cordova application. On Android you have to explicitly add things to the status bar (as opposed to iOS where push notifications automatically get displayed in the UI). The Android status bar is the UI component at the top of the screen that has a bunch of little icons. You can also drag the status bar down to view a list of notifications.
