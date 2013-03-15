@@ -12,8 +12,8 @@
       <plugin name="StatusBarNotification" value="com.phonegap.plugins.statusBarNotification.StatusBarNotification" />
     </config-file>
     
-    <source-file src="StatusBarNotification.java" target-dir="com/phonegap/plugins/statusBarNotification/" />
-    <source-file src="StatusNotificationIntent.java" target-dir="com/phonegap/plugins/statusBarNotification/" />
+    <source-file src="StatusBarNotification.java" target-dir="src/com/phonegap/plugins/statusBarNotification/" />
+    <source-file src="StatusNotificationIntent.java" target-dir="src/com/phonegap/plugins/statusBarNotification/" />
 
     <source-file src="../../res/android/drawable-hdpi/notification.png" target-dir="res/drawable-hdpi/" />
     <source-file src="../../res/android/drawable-mdpi/notification.png" target-dir="res/drawable-mdpi/" />

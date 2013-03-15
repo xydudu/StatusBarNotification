@@ -12,7 +12,7 @@ module.exports = function (grunt) {
         }
       },
       js : {
-        src : 'src/android/StatusNotificationIntentGruntPreprocess.java',
+        src : 'StatusNotificationIntentGruntPreprocess.java',
         dest : 'src/android/StatusNotificationIntent.java'
       }
     }
