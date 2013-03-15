@@ -10,27 +10,10 @@ This plugin allows you to display notifications in the status bar from your Cord
 
 Using this plugin requires [Android Cordova](http://github.com/apache/incubator-cordova-android).
 
-1. To install the plugin, move statusbarnotification.js to your project's www folder and include a reference to it in your html file after cordova.js.
-
-    &lt;script type="text/javascript" charset="utf-8" src="cordova.js"&gt;&lt;/script&gt;<br/>
-    &lt;script type="text/javascript" charset="utf-8" src="statusbarnotification.js"&gt;&lt;/script&gt;
-
-2. Create a directory within your project called "src/com/phonegap/plugins/statusBarNotification" and move the .java files from this folder into it.
-
-3. In your res/xml/plugins.xml file add the following line:
-
-    &lt;plugin name="StatusBarNotification" value="com.phonegap.plugins.statusBarNotification.StatusBarNotification"/&gt;
-
-   CAUTION: Using PhoneGap &ge; 2.0 (aka Cordova) you have to add this line into res/xml/config.xml in the &lt;plugins&gt;-section.
-The plugins.xml is no longer supported. The plugins are all located in the config.xml
-
-
-4. You will need to add a notification.png file to your applications res/drawable-ldpi, res/drawable-mdpi & res/drawable-hdpi or res/drawable-xhdpi directories (depending on what resolutions you want to support).
-
-5. You will need to add an import line like this to the .java files (see commented out lines inside the files):
+1. You will need to add an import line like this to the .java files (see commented out lines inside the files):
 
 	import com.my.app.R; 
-6. If you need the notification to stick, you can pass a paramter to notify function. 
+2. If you need the notification to stick, you can pass a paramter to notify function. 
 	E.g.:
 	   window.plugins.statusBarNotification.notify("Put your title here", "Put your sticky message here", Flag.FLAG_NO_CLEAR);
            //you can then use clear function to remove it.

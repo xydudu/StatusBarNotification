@@ -5,19 +5,19 @@
     version="1.0.0">
     <name>StatusBarNotification</name>
 
-	<asset src="www/statusbarnotification.js" target="PushNotification.js" />
+	<asset src="www/statusbarnotification.js" target="statusbarnotification.js" />
 
 	<platform name="android">
     <config-file target="res/xml/config.xml" parent="plugins">
       <plugin name="StatusBarNotification" value="com.phonegap.plugins.statusBarNotification.StatusBarNotification" />
     </config-file>
     
-    <source-file src="src/android/StatusBarNotification.java" target-dir="src/com/phonegap/plugins/statusBarNotification/" />
-    <source-file src="src/android/StatusNotificationIntent.java" target-dir="src/com/phonegap/plugins/statusBarNotification/" />
+    <source-file src="src/android/StatusBarNotification.java" target-dir="com/phonegap/plugins/statusBarNotification/" />
+    <source-file src="src/android/StatusNotificationIntent.java" target-dir="com/phonegap/plugins/statusBarNotification/" />
 
-    <source-file src="res/drawable-hdpi/notification.png" target-dir="../../res/drawable-hdpi/" />
-    <source-file src="res/drawable-mdpi/notification.png" target-dir="../../res/drawable-mdpi/" />
-    <source-file src="res/drawable-xhdpi/notification.png" target-dir="../../res/drawable-xhdpi/" />
+    <source-file src="res/drawable-hdpi/notification.png" target-dir="../res/drawable-hdpi/" />
+    <source-file src="res/drawable-mdpi/notification.png" target-dir="../res/drawable-mdpi/" />
+    <source-file src="res/drawable-xhdpi/notification.png" target-dir="../res/drawable-xhdpi/" />
 		
   </platform>
 </plugin>
