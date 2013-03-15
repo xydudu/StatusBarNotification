@@ -8,7 +8,7 @@ module.exports = function (grunt) {
     preprocess : {
       options: {
         context : {
-          $PACKAGE_NAME: process.env.$PACKAGE_NAME
+          $PACKAGE_NAME: process.env.PACKAGE_NAME
         }
       },
       js : {
