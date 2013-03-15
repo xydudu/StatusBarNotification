@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.phonegap.plugins.statusBarNotification.StatusBarNotification"
-    version="1.0.0">
+    version="0.0.1">
     <name>StatusBarNotification</name>
 
 	<asset src="www/statusbarnotification.js" target="statusbarnotification.js" />
