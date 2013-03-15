@@ -10,9 +10,16 @@ This plugin allows you to display notifications in the status bar from your Cord
 
 Using this plugin requires [Android Cordova](http://github.com/apache/incubator-cordova-android).
 
-1. You will need to add an import line like this to the .java files (see commented out lines inside the files):
+1. You will need to 
 
-	import com.my.app.R; 
+  - add an import line like this to the .java files (see commented out lines inside the files):
+    
+    import com.my.app.R; 
+
+  - or use grunt to insert that import automatically. to do so run inside the plugin dir after installation:
+    - npm install
+    - env $PACKAGE_NAME=com.your_domain.AppName grunt preprocess
+
 2. If you need the notification to stick, you can pass a paramter to notify function. 
 	E.g.:
 	   window.plugins.statusBarNotification.notify("Put your title here", "Put your sticky message here", Flag.FLAG_NO_CLEAR);
