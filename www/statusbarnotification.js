@@ -25,6 +25,8 @@
 *
 */
 
+var exec = require('cordova/exec'),
+
 var cordovaRef = window.PhoneGap || window.Cordova || window.cordova; // old to new fallbacks
 
 /** 
@@ -64,9 +66,10 @@ NotificationMessenger.prototype.clear = function() {
     }
 }
 
-if (!window.plugins) window.plugins = {}
-if (!window.plugins.statusBarNotification) window.plugins.statusBarNotification = new NotificationMessenger();
-
+//if (!window.plugins) window.plugins = {}
+//if (!window.plugins.statusBarNotification) window.plugins.statusBarNotification = new NotificationMessenger();
+//
+var statusBarNotification = new NotificationMessenger();
 
 /*
  * The W3C standard API, window.Notification. See http://www.w3.org/TR/notifications/
@@ -96,7 +99,8 @@ if (typeof window.Notification == 'undefined') {
         
         var flag = options.flag || '';
 
-        cordova.exec(function() {
+        //cordova.exec(function() {
+        exec(function() {
             if (this.onshow) {
                 this.onshow();
             }
@@ -132,7 +136,8 @@ if (typeof window.Notification == 'undefined') {
      * Cancels a notification that has already been created and shown to the user.
      */
     window.Notification.prototype.close = function() {
-        cordova.exec(function() {
+        exec(function() {
+        //cordova.exec(function() {
             if (this.onclose) {
                 this.onclose();
             }
@@ -145,3 +150,4 @@ if (typeof window.Notification == 'undefined') {
 }
 
 // vim: tabstop=4:softtabstop=4:shiftwidth=4:expandtab
+module.exports = statusBarNotification;
