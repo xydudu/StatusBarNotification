@@ -1,5 +1,6 @@
 // This class is used on all Androids below Honeycomb
-package com.phonegap.plugins.statusBarNotification;
+//package com.phonegap.plugins.statusBarNotification;
+package org.apache.cordova.sbn
 
 
 import android.app.Notification;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="org.apache.cordova.sbn.sbnotification"
+           id="org.apache.cordova.sbn"
       version="0.1.0">
     <name>StatusNotification</name>
     <description>status bar notification plugin</description>
@@ -24,9 +24,9 @@
         <source-file src="src/android/StatusNotification.java" target-dir="src/org/apache/cordova/sbn" />      
         <source-file src="src/android/StatusNotificationIntent.java" target-dir="src/org/apache/cordova/sbn" />      
 
-        <source-file src="../../res/android/drawable-hdpi/notification.png" target-dir="res/drawable-hdpi/" />
-        <source-file src="../../res/android/drawable-mdpi/notification.png" target-dir="res/drawable-mdpi/" />
-        <source-file src="../../res/android/drawable-xhdpi/notification.png" target-dir="res/drawable-xhdpi/" />
+        <source-file src="res/android/drawable-hdpi/notification.png" target-dir="res/drawable-hdpi/" />
+        <source-file src="res/android/drawable-mdpi/notification.png" target-dir="res/drawable-mdpi/" />
+        <source-file src="res/android/drawable-xhdpi/notification.png" target-dir="res/drawable-xhdpi/" />
      </platform>
           
 </plugin>

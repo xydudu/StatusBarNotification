@@ -25,7 +25,8 @@
  *
  */
 
-package com.phonegap.plugins.statusBarNotification;
+//package com.phonegap.plugins.statusBarNotification;
+package org.apache.cordova.sbn
 
 import org.apache.cordova.api.CallbackContext;
 import org.apache.cordova.api.CordovaPlugin;
