@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    id="org.apache.cordova.statusBarNotification.StatusBarNotification"
-    version="0.0.1">
-    <name>StatusBarNotification</name>
 
-    <js-module src="www/statusbarnotification.js" name="statusBarNotification">
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="org.apache.cordova.sbn.sbnotification"
+      version="0.1.0">
+    <name>StatusNotification</name>
+    <description>status bar notification plugin</description>
+    <license>MIT</license>
+    <keywords>cordova,notification</keywords>
+
+
+    <js-module src="www/statusbarnotification.js" name="StatusNotification">
         <clobbers target="window.statusBarNotification" />
     </js-module>
 
-	<platform name="android">
+    <!-- android -->
+    <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="StatusBarNotification">
-                <param name="android-package" value="org.apache.cordova.statusBarNotification.StatusBarNotification" />
+            <feature name="StatusNotification">
+                <param name="android-package" value="org.apache.cordova.sbn.SBNotification"/>
             </feature>
         </config-file>
-    
-        <source-file src="src/android/StatusBarNotification.java" target-dir="src/org/apache/cordova/statusBarNotification/" />
-        <source-file src="src/android/StatusNotificationIntent.java" target-dir="src/org/apache/cordova/statusBarNotification/" />
+
+        <source-file src="src/android/StatusNotification.java" target-dir="src/org/apache/cordova/sbn" />      
+        <source-file src="src/android/StatusNotificationIntent.java" target-dir="src/org/apache/cordova/sbn" />      
 
         <source-file src="../../res/android/drawable-hdpi/notification.png" target-dir="res/drawable-hdpi/" />
         <source-file src="../../res/android/drawable-mdpi/notification.png" target-dir="res/drawable-mdpi/" />
         <source-file src="../../res/android/drawable-xhdpi/notification.png" target-dir="res/drawable-xhdpi/" />
-		
-  </platform>
+     </platform>
+          
 </plugin>
