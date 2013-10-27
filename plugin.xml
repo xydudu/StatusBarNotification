@@ -5,7 +5,7 @@
     version="0.0.1">
     <name>StatusBarNotification</name>
 
-    <js-module src="www/statusBarNotification.js" name="statusBarNotification">
+    <js-module src="www/statusbarnotification.js" name="statusBarNotification">
         <clobbers target="window.statusBarNotification" />
     </js-module>
 
