@@ -10,7 +10,7 @@
 
 
     <js-module src="www/statusbarnotification.js" name="StatusBarNotification">
-        <clobbers target="window.statusBarNotification" />
+        <clobbers target="window.sbn" />
     </js-module>
 
     <!-- android -->

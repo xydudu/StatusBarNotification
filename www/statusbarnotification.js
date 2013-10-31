@@ -25,9 +25,8 @@
 *
 */
 
-var exec = require('cordova/exec'),
-
-var cordovaRef = window.PhoneGap || window.Cordova || window.cordova; // old to new fallbacks
+var exec = require('cordova/exec');
+//var cordovaRef = window.PhoneGap || window.Cordova || window.cordova; // old to new fallbacks
 
 /** 
  * Flags to denote the Android Notification constants

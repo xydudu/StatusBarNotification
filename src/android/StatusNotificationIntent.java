@@ -1,6 +1,6 @@
 // This class is used on all Androids below Honeycomb
 //package com.phonegap.plugins.statusBarNotification;
-package org.apache.cordova.sbn
+package org.apache.cordova.sbn;
 
 
 import android.app.Notification;
@@ -9,7 +9,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 
-// import $PACKAGE_NAME.R;
+import com.kaka.reader.R;
 
 public class StatusNotificationIntent {
     public static Notification buildNotification( Context context, CharSequence tag, CharSequence contentTitle, CharSequence contentText, int flag ) {
